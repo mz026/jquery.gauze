@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="jquery.gauze.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+    <title>Gauze demo</title>
+  </head>
+
+  <body>
+    <div class="original-block"> this is original block </div>
+    <div class="original-block"> this is original block </div>
+    <div class="original-block"> this is original block </div>
+    <div class="original-block"> this is original block </div>
+    <div class="original-block"> this is original block </div>
+
+    <div class="overlay">
+      <div class="overlay-content">this is overlay content</div>
+      <div class="overlay-content">this is overlay content</div>
+      <div class="overlay-content">this is overlay content</div>
+      <div class="overlay-content">this is overlay content</div>
+      <div class="overlay-content">this is overlay content</div>
+      <div class="close">X</div>
+    </div>
+
+    <div class="on trigger"> on </div>
+    <div class="off trigger"> off </div>
+
+    <script type="text/javascript">
+      $(function() {
+        $(".overlay").gauze();
+
+        $(".on").click(function() {
+          $(".overlay").gauze().on();
+        });
+
+        $(".off").click(function() {
+          $(".overlay").gauze().off();
+        });
+      });
+    </script>
+  </body>
+</html>
