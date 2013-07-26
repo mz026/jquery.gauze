@@ -10,6 +10,7 @@ div {
   line-height: 250px;
 }
 
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -24,7 +25,7 @@ div {
 
 .trigger {
   position: fixed;
-  left: 0;
+  left: 10px;
 
   width: 80px;
   height: 50px;
@@ -50,7 +51,7 @@ div {
 
 .close {
   position: fixed;
-  top: 0px;
+  top: 5px;
   right: 30px;
   width: 30px;
   height: 30px;
