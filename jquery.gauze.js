@@ -9,7 +9,8 @@ $.fn.gauze = function(options) {
   data = $(this).data("gauze");
   options = $.extend({
     closeClass: ".close"
-  }, options)
+    , onClose: function(){}
+  }, options);
 
   $(this).css({
     display: "none"
@@ -29,6 +30,7 @@ $.fn.gauze = function(options) {
   data.off = function() {
     $("body").css({ overflow: "visible" });
     $(self).hide();
+    options.onClose.call();
   };
 
   $(this).delegate(options.closeClass, "click", function() {

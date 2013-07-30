@@ -30,6 +30,7 @@ A jquery plugin providing "gauze" overlay like Pinterest.
 ### options:
 
 - `closeClass`: selector used to close the overlay
+- `onClose`: close callback which would be invoked on gauze closed
 
 
 ### sample: see the `sample/index.html`

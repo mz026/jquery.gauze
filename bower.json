@@ -1,5 +1,5 @@
 {
-  "name": "gauze",
+  "name": "jqueyr.gauze",
   "version": "0.0.1",
   "main": "jquery.gauze.js",
   "ignore": [
